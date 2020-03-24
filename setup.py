@@ -12,7 +12,7 @@ with open('./README.md') as fs:
     long_description = fs.read()
 
 setup(name='checkpoints',
-      version='1.0.0',
+      version='1.0.1',
       author='Will Badart',
       author_email='Badart_William@bah.com',
       description='Cache results of functions returning pandas DataFrames.',
