@@ -12,5 +12,6 @@ $ pip install git+ssh://git@github.boozallencsn.com/Badart-William/checkpoints.g
 
 Or add
 `git+ssh://git@github.boozallencsn.com/Badart-William/checkpoints.git`
-to the `install_requires` setting of your `setup.py` file or to your
-`requirements.txt` file.
+to your `requirements.txt` file, or add that URL to the
+`dependency_links` section of your `setup.py` file and add
+`checkpoints` to `install_requires`.
