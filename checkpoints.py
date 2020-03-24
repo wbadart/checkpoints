@@ -22,12 +22,8 @@ def checkpoint(cache, **csv_args):
 
     Parameters
     ----------
-    cache : str, path object or file-like object
-        The path to the file which contains the results of `func`, or a buffer
-        to write the results to. If `cache` is a string or path-like object,
-        the cache will be a file on disk. Use an `io.StringIO` buffer if an
-        in-memory cache is better suited to your use case.  See
-        `pandas.read_csv` "filepath_or_buffer" for details.
+    cache : str or path object
+        The path to the file which contains the results of `func`.
     **csv_args : Optional[Mapping]
         Arguments to pass on to both `pandas.read_csv` to retrieve cached
         results and `pandas.DataFrame.to_csv` to save results. Should only

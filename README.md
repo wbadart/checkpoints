@@ -44,19 +44,6 @@ df.pipe(checkpoint('checkpoint.csv')(really_expensive_process))\
   .pipe(the_rest_of_my_pipeline)
 ```
 
-If it's appropriate for your use-case, use an `io.StringIO` buffer
-for an in-memory cache:
-
-```python
-from io import StringIO
-import pandas as pd
-from checkpoints import checkpoint
-
-@checkpoint(StringIO())
-def my_other_func(df: pd.DataFrame, some_param) -> pd.DataFrame:
-    ...
-```
-
 See
 
 ```
