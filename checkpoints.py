@@ -10,6 +10,10 @@ from functools import wraps
 from os import path
 import pandas as pd
 
+__all__ = [
+    'checkpoint'
+]
+
 
 def checkpoint(cache, **csv_args):
     """
