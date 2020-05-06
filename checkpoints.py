@@ -39,7 +39,7 @@ def checkpoint(cache, **csv_args):
     def _decorator(func):
         @wraps(func)
         def _wrapper(*args, **kwargs):
-            if path.exists(path):
+            if path.exists(cache):
                 return pd.read_csv(cache, **csv_args)
             else:
                 result = func(*args, **kwargs)
